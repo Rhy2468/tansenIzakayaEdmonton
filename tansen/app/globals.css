@@ -45,10 +45,10 @@ body {
 .flex-container {
   margin-top: 2rem;
   display: flex;
-  gap: 80px;
+  gap: min(6vw, 50px);
   font-family: "Kaisei Decol", serif;
   font-style: bold;
-  font-size: 1.5rem;
+  font-size: min(2vw, 25px);
   letter-spacing: 0.5rem;
   padding-bottom: 5px;
 }
