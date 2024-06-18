@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       <div className="header">
-        <Link href="/">
+        <Link className="logo" href="/">
           <Image src={tansenLogo} alt="Tansen Izakaya Logo"/>
         </Link>
         <div className="flex-container">
