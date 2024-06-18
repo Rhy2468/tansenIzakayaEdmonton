@@ -19,6 +19,7 @@ export default function Home() {
           <div> CONTACT US</div>
         </div>
       </div>
+      <div className="divider75"></div>
 
       <div className="mainDishes">
         <Image src={mainDishes} alt="Picture of popular dishes"/>
