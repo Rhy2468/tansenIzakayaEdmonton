@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
 
 :root {
   --foreground-rgb: 255, 255, 255; 
@@ -29,4 +30,14 @@ body {
   width: 100vw; 
   height: 100vh;
   overflow: hidden; 
+}
+
+.flex-container {
+  margin-top: 2rem;
+  display: flex;
+  gap: 80px;
+  font-family: "Kaisei Decol", serif;
+  font-style: bold;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
 }

@@ -8,12 +8,16 @@ import mainDishes from './assets/mainDishes.png';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center">
       <div className="header">
         <Link href="/">
           <Image src={tansenLogo} alt="Tansen Izakaya Logo"/>
         </Link>
-        <div className="navbar"></div>
+        <div className="flex-container">
+          <div> ABOUT US</div>
+          <div> MENU</div>
+          <div> CONTACT US</div>
+        </div>
       </div>
 
       <div className="mainDishes">
