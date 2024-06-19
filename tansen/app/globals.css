@@ -80,10 +80,9 @@ p {
 
 /*About Us*/
 .about-us-title{
-  background-color: white;
+  background-color: transparent;
   padding-top: min(4vw, 50px);
   width:100%;
-  color: black;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -91,13 +90,14 @@ p {
   font-style: bold;
   letter-spacing: 0.5rem;
   font-size: min(4vw, 70px);
+  z-index: 2;
+  color: white;
+  position: relative;
 }
 
 .about-us {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
+  height: 80vh;
   background: white; 
   background: linear-gradient(to bottom, white 70%, black);
   color: black;
@@ -106,10 +106,25 @@ p {
 .about-us-container{
   display: flex; 
   width: 100%;
-  height: 70vh;
-  padding: 30px;
+  height: auto;
+  padding: min(0px, 30px);
+  margin-bottom: 10px;
   justify-content: center;
   text-align: center;
+}
+
+.brush-stroke {
+  margin: 0 auto;
+  position: relative;
+  width: 70vw;
+  top: min(-7vw, -8vw);
+  z-index: 1; /* Lower z-index for the brush stroke */
+}
+
+.title-container {
+  position: relative;
+  text-align: center; /* Optional: Center align the content */
+  height: max(10vh, 20vh);
 }
 
 .textbox {
@@ -117,7 +132,6 @@ p {
   padding: 10px;
   box-sizing: border-box;
 }
-
 
 /*Contact Us*/
 .contact-us-title{
@@ -131,7 +145,6 @@ p {
   letter-spacing: 0.5rem;
   font-size: min(4vw, 70px);
 }
-
 
 .contact-info{
   display: flex; 

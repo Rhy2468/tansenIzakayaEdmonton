@@ -5,6 +5,7 @@ import Link from "next/link";
 //Images
 import tansenLogo from './assets/tansenLogo.png';
 import mainDishes from './assets/mainDishes.png';
+import brushStroke from './assets/brush-stroke.svg'
 
 export default function Home() {
   return (
@@ -29,10 +30,13 @@ export default function Home() {
         <Image src={mainDishes} alt="Picture of popular dishes"/>
       </div>
 
-      <div className="about-us-title">
-        <h1 id="about-us">ABOUT US</h1>
-      </div>
+
+
       <div className="about-us">
+        <div className="title-container">
+          <h1 id="about-us" className="about-us-title">ABOUT US</h1>
+          <Image src={brushStroke} alt="brush stroke" className="brush-stroke"/>
+        </div>
         <div className="about-us-container">
           <p>As the best izakaya in Edmonton, we pride ourselves on offering 
             an authentic Japanese dining experience that combines traditional 
