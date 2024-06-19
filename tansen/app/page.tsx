@@ -56,9 +56,6 @@ export default function Home() {
           </p>
           <div className="map-container">
             <GoogleMap></GoogleMap>
-            <p className="hours-title"> OPENING HOURS</p>
-            <p className="hours"> Sun - Thur 11:30AM - 10:00PM </p>
-            <p className="hours"> Fri - Sat 11:30AM - 12:00AM </p>
           </div>
         </div>
       </div>

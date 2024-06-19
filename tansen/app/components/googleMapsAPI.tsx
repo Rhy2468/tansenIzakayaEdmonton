@@ -24,18 +24,29 @@ const GoogleMap = () => {
           zoomControl: false
         });
 
+        const infoWindow = new google.maps.InfoWindow({
+          ariaLabel: "Hi",
+          content: '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+ 'Opening Hours\n Sun-Thur: 11:30am - 10:00pm\n Fri-Sat: 11:30am - 12:00am'
+        });
+
         // Create a marker and set its position
         const marker = new google.maps.Marker({
           position: {lat: 53.51841880329726, lng: -113.51734477739068},
           animation: google.maps.Animation.DROP,
-          map: map
+          map: map,
+          title: '11044 82 Ave NW, Edmonton, AB T6G 0T2'
         });
 
         marker.setIcon({
           url:"/tansenLogo.ico",
-          scaledSize: new google.maps.Size(25, 25)
+          scaledSize: new google.maps.Size(75, 75)
         });
-
+        
+        marker.addListener("click", () => {
+          infoWindow.close();
+          infoWindow.open(marker.getMap(), marker);
+        });
+        
         marker.setAnimation(google.maps.Animation.BOUNCE)
         
       }
