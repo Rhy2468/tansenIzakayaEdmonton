@@ -186,3 +186,14 @@ p {
   margin: 2%;
   color:white;
 }
+
+.aria-label {
+  text-align: left;
+  font-size: min(4vw, 15px);
+}
+
+.aria-label-name {
+  text-align: left;
+  font-weight: bold;
+  font-size: min(4vw, 20px);
+}

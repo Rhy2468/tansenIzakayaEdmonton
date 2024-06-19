@@ -25,8 +25,11 @@ const GoogleMap = () => {
         });
 
         const infoWindow = new google.maps.InfoWindow({
-          ariaLabel: "Hi",
-          content: '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+ 'Opening Hours\n Sun-Thur: 11:30am - 10:00pm\n Fri-Sat: 11:30am - 12:00am'
+          content: '<div>' +
+                      "<h1 class='aria-label-name'> Tansen Izakaya Edmonton</h1>"  +
+                      "<h1 class='aria-label'> 11044 82 Ave NW, Edmonton, AB T6G 0T2</h1>"  +
+                      '<h1>Opening Hours\n Sun-Thur: 11:30am - 10:00pm\n Fri-Sat: 11:30am - 12:00am</h1>' +
+                      "</div>"
         });
 
         // Create a marker and set its position
