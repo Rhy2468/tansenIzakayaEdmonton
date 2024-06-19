@@ -2,9 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
+
 //Images
 import tansenLogo from './assets/tansenLogo.png';
 import mainDishes from './assets/mainDishes.png';
+
+//API imports
+import GoogleMap from "./components/googleMapsAPI";
 
 export default function Home() {
   return (
@@ -43,7 +47,9 @@ export default function Home() {
             complemented by exceptional service, ensures that every visit is 
             memorable. Whether you're enjoying a casual meal with friends or 
             celebrating a special occasion, Tansen Izakaya is dedicated to 
-            providing a culinary journey that delights all your senses. </p>
+            providing a culinary journey that delights all your senses. 
+          </p>
+          <GoogleMap></GoogleMap>
         </div>
       </div>
 
