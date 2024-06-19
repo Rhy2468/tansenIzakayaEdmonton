@@ -62,8 +62,8 @@ export default function Home() {
       </div>
 
       <div className="contact-us">
-          <p className="contact-info">PHONE:  403 - 444 - 4444 </p>
-          <p className="contact-info">EMAIL:  tensenIzakaya@gmail.com </p>
+          <p className="contact-info">PHONE: 403 - 444 - 4444 </p>
+          <p className="contact-info">EMAIL: tensenIzakaya@gmail.com </p>
       </div>
     </main>
   );

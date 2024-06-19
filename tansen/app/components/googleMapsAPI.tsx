@@ -1,7 +1,9 @@
-// googleMapsAPI.tsx
 "use client"; // This directive marks the component as a Client Component
-
 import { useEffect, useRef } from 'react';
+
+//Icon
+import tansenLogo from '../assets/tansenLogo.png';
+
 
 const GoogleMap = () => {
   const mapRef = useRef<HTMLDivElement | null>(null);
@@ -21,15 +23,16 @@ const GoogleMap = () => {
     const initMap = () => {
       if (mapRef.current) {
         const map = new google.maps.Map(mapRef.current, {
-          center: {lat: 53.51826429237438, lng: -113.51737713892895}, // Coordinates for Edmonton
-          zoom: 15,
+          center: {lat: 53.51841880329726, lng: -113.51734477739068}, // Coordinates for Edmonton
+          zoom: 13,
+          zoomControl: false
         });
-
+        
+        const image = tansenLogo
         // Create a marker and set its position
         const marker = new google.maps.Marker({
-          position: {lat: 53.51826429237438, lng: -113.51737713892895},
+          position: {lat: 53.51841880329726, lng: -113.51734477739068},
           map: map,
-          title: "Tansen Izakaya",
         });
       }
     };
