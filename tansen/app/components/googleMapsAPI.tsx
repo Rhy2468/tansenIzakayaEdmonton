@@ -28,7 +28,7 @@ const GoogleMap = () => {
           content: '<div>' +
                       "<h1 class='aria-label-name'> Tansen Izakaya Edmonton</h1>"  +
                       "<h1 class='aria-label'> 11044 82 Ave NW, Edmonton, AB T6G 0T2</h1>"  +
-                      '<h1>Opening Hours\n Sun-Thur: 11:30am - 10:00pm\n Fri-Sat: 11:30am - 12:00am</h1>' +
+                      '<h1 class="aria-label">Opening Hours</h1>'+ '<h1 class="aria-label"> Sun-Thur: 11:30am - 10:00pm</h1>' + '<h1 class="aria-label"> Fri-Sat: 11:30am - 12:00am</h1>' +
                       "</div>"
         });
 
@@ -39,6 +39,8 @@ const GoogleMap = () => {
           map: map,
           title: '11044 82 Ave NW, Edmonton, AB T6G 0T2'
         });
+
+        infoWindow.open(marker.getMap(), marker);
 
         marker.setIcon({
           url:"/tansenLogo.ico",

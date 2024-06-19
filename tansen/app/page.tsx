@@ -1,18 +1,33 @@
+"use client";
 //Library Imports
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from 'react';
 
 
 //Images
 import tansenLogo from './assets/tansenLogo.png';
 import mainDishes from './assets/mainDishes.png';
-import brushStroke from './assets/brush-stroke.svg'
+import brushStroke from './assets/brush-stroke.svg';
+import slide1 from './assets/Test1.jpg'; 
+import slide2 from './assets/Test2.jpg';
+
 
 
 //API imports
 import GoogleMap from "./components/googleMapsAPI";
 
 export default function Home() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = [mainDishes,slide1, slide2];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 3000); // Change slide every 3 seconds
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
   return (
     <main className="flex min-h-screen flex-col items-center">
       <div className="header">
@@ -56,6 +71,26 @@ export default function Home() {
           </p>
           <div className="map-container">
             <GoogleMap></GoogleMap>
+          </div>
+        </div>
+      </div>
+
+      <div className="gallery-container">
+        <div className="cells-container">
+          <div className="left-cell">
+            <div className="slideshow">
+              {slides.map((slide, index) => (
+                <Image
+                  key={index}
+                  src={slide}
+                  alt={`Slide ${index + 1}`}
+                  className={`slide ${index === currentSlide ? 'active' : ''}`}
+                />
+              ))}
+            </div>
+          </div>
+          <div className="right-cell">
+
           </div>
         </div>
       </div>
