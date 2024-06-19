@@ -14,9 +14,13 @@ export default function Home() {
           <Image src={tansenLogo} alt="Tansen Izakaya Logo"/>
         </Link>
         <div className="flex-container">
-          <div className="tab"> ABOUT US</div>
+          <div className="tab"> 
+            <Link href="#about-us"> ABOUT US</Link>
+          </div>
           <div className="tab"> MENU</div>
-          <div className="tab"> CONTACT US</div>
+          <div className="tab"> 
+            <Link href="#contact-us"> CONTACT US</Link>
+          </div>
         </div>
       </div>
       <div className="divider75"></div>
@@ -26,13 +30,12 @@ export default function Home() {
       </div>
 
       <div className="about-us-title">
-        <h1>ABOUT US</h1>
+        <h1 id="about-us">ABOUT US</h1>
       </div>
       <div className="about-us">
         <div className="about-us-container">
           <div className="left-cell">
-            <h2>Title</h2>
-            <h3>As the best izakaya in Edmonton, we pride ourselves on offering 
+            <p>As the best izakaya in Edmonton, we pride ourselves on offering 
               an authentic Japanese dining experience that combines traditional 
               flavors with a modern twist. At Tansen Izakaya, our menu features 
               a variety of delectable dishes, from expertly crafted sushi and 
@@ -41,16 +44,23 @@ export default function Home() {
               complemented by exceptional service, ensures that every visit is 
               memorable. Whether you're enjoying a casual meal with friends or 
               celebrating a special occasion, Tansen Izakaya is dedicated to 
-              providing a culinary journey that delights all your senses. </h3>
-          </div>
-
-          <div className="right-cell">
-            <h2>Google Maps </h2>
+              providing a culinary journey that delights all your senses. </p>
           </div>
         </div>
       </div>
 
+      <div className="contact-us-title">
+        <h1 id="contact-us">CONTACT US</h1>
+      </div>
 
+      <div className="contact-us">
+        <div className="contact-us-container">
+          <div className="left-cell">
+            <h2 className="contact-info">PHONE:  403 - 444 - 4444 </h2>
+            <h2 className="contact-info">EMAIL:  tensenIzakaya@gmail.com </h2>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
