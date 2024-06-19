@@ -66,7 +66,6 @@ p {
   letter-spacing: 0.5rem;
 }
 
-
 .divider75 {
   width: 75%;
   border: 0;
@@ -98,6 +97,7 @@ p {
 
 .about-us-title{
   background-color: transparent;
+  padding-top: min(4vw, 50px);
   width:100%;
   display: flex;
   text-align: center;
@@ -114,6 +114,7 @@ p {
 
 .about-us {
   width: 100%;
+  height: auto;
   height: auto;
   background: white; 
   background: linear-gradient(to bottom, white 70%, black);
@@ -138,20 +139,13 @@ p {
 }
 
 .map {
-  height: 40vh;
+  height: 50vh;
   aspect-ratio: 1/1;
-}
-.map-container{
-  padding: 40px;
 }
 
 @media (min-width: 1000px) { 
   .title-container{
     height: 20vh
-  }
-
-  .map{
-    height: 50vh;
   }
 }
 
@@ -172,7 +166,22 @@ p {
 .contact-info{
   display: flex; 
   justify-content: center;
-  text-align: center;
   font-family: "Kaisei Decol", serif;
   font-style: normal;
+}
+
+.hours-title {
+  font-size: min(4vw, 70px);
+  color:white;
+  margin-bottom: min(4vh, 15px);
+  mix-blend-mode: difference;
+}
+
+.hours {
+  display: flex; 
+  justify-content: center;
+  font-family: "Kaisei Decol", serif;
+  font-style: normal;
+  margin: 2%;
+  color:white;
 }
