@@ -10,7 +10,7 @@ const GoogleMap = () => {
     const loadGoogleMaps = () => {
       if (!window.google) {
         const script = document.createElement('script');
-        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyB6S3hISqhVGCkw3Uq1fbbWHm2JR-1cehI`;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_MAPS_API_KEY}`;
         document.head.appendChild(script);
         script.onload = () => initMap();
       } else {
