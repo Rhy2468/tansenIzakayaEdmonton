@@ -8,6 +8,7 @@ import tansenLogo from './assets/tansenLogo.png';
 import mainDishes from './assets/mainDishes.png';
 import brushStroke from './assets/brush-stroke.svg'
 
+
 //API imports
 import GoogleMap from "./components/googleMapsAPI";
 
@@ -53,7 +54,9 @@ export default function Home() {
             celebrating a special occasion, Tansen Izakaya is dedicated to 
             providing a culinary journey that delights all your senses. 
           </p>
-          <GoogleMap></GoogleMap>
+          <div className="map-container">
+            <GoogleMap></GoogleMap>
+          </div>
         </div>
       </div>
 
