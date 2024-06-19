@@ -54,6 +54,9 @@ export default function Home() {
             providing a culinary journey that delights all your senses. 
           </p>
           <GoogleMap></GoogleMap>
+          <p className="hours-title"> OPENING HOURS</p>
+          <p className="hours"> Sun - Thur 11:30AM - 10:00PM </p>
+          <p className="hours"> Fri - Sat 11:30AM - 12:00AM </p>
         </div>
       </div>
 
