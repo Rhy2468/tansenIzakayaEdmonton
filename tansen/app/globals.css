@@ -109,25 +109,7 @@ p {
   height: 70vh;
   padding: 30px;
   justify-content: center;
-}
-
-.left-cell{
-  flex: 0 0 50%;
-  padding: 20px;
-  box-sizing: border-box;
-  overflow: auto;
-  max-height: min(45vh, 700px);
-}
-
-.left-cell h3{
-  max-height: min(45vh, 700px)
-}
-
-.right-cell{
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
-  max-height: min(45vh, 700px)
+  text-align: center;
 }
 
 .textbox {
@@ -147,5 +129,13 @@ p {
   font-family: "Kaisei Decol", serif;
   font-style: bold;
   letter-spacing: 0.5rem;
-  font-size: min(4vw, 25px);
+  font-size: min(4vw, 70px);
+}
+
+
+.contact-info{
+  display: flex; 
+  justify-content: center;
+  font-family: "Kaisei Decol", serif;
+  font-style: normal;
 }

@@ -34,18 +34,16 @@ export default function Home() {
       </div>
       <div className="about-us">
         <div className="about-us-container">
-          <div className="left-cell">
-            <p>As the best izakaya in Edmonton, we pride ourselves on offering 
-              an authentic Japanese dining experience that combines traditional 
-              flavors with a modern twist. At Tansen Izakaya, our menu features 
-              a variety of delectable dishes, from expertly crafted sushi and 
-              sashimi to flavorful yakitori and tempura, all made with the 
-              freshest ingredients. Our warm and inviting atmosphere, 
-              complemented by exceptional service, ensures that every visit is 
-              memorable. Whether you're enjoying a casual meal with friends or 
-              celebrating a special occasion, Tansen Izakaya is dedicated to 
-              providing a culinary journey that delights all your senses. </p>
-          </div>
+          <p>As the best izakaya in Edmonton, we pride ourselves on offering 
+            an authentic Japanese dining experience that combines traditional 
+            flavors with a modern twist. At Tansen Izakaya, our menu features 
+            a variety of delectable dishes, from expertly crafted sushi and 
+            sashimi to flavorful yakitori and tempura, all made with the 
+            freshest ingredients. Our warm and inviting atmosphere, 
+            complemented by exceptional service, ensures that every visit is 
+            memorable. Whether you're enjoying a casual meal with friends or 
+            celebrating a special occasion, Tansen Izakaya is dedicated to 
+            providing a culinary journey that delights all your senses. </p>
         </div>
       </div>
 
@@ -54,12 +52,8 @@ export default function Home() {
       </div>
 
       <div className="contact-us">
-        <div className="contact-us-container">
-          <div className="left-cell">
-            <h2 className="contact-info">PHONE:  403 - 444 - 4444 </h2>
-            <h2 className="contact-info">EMAIL:  tensenIzakaya@gmail.com </h2>
-          </div>
-        </div>
+          <p className="contact-info">PHONE:  403 - 444 - 4444 </p>
+          <p className="contact-info">EMAIL:  tensenIzakaya@gmail.com </p>
       </div>
     </main>
   );
