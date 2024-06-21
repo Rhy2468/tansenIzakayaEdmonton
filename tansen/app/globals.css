@@ -29,6 +29,7 @@ p {
   font-style: normal;
   font-size: min(3vw, 25px);
   width: 80%;
+  padding-right: 30px;
 }
 
 @layer utilities {
@@ -85,7 +86,16 @@ p {
   position: relative;
   text-align: center; 
   height: 15vh;
+  clip-path: inset(0 100% 0 0);
+  animation: appear 4s forwards;
+  width: 100%;
 }
+
+@keyframes appear {
+  to {
+      clip-path: inset(0 0 0 0);
+  }
+} 
 
 .brush-stroke {
   position: absolute;
@@ -113,12 +123,17 @@ p {
 }
 
 .about-us {
+  display: flex;
   width: 100%;
   height: auto;
   height: auto;
   background: white; 
   background: linear-gradient(to bottom, white 70%, black);
   color: black;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .about-us-container{
@@ -126,11 +141,12 @@ p {
   width: 100%;
   height: auto;
   padding: min(0px, 30px);
-  margin-bottom: 10px;
+  margin-bottom: 300px;
   justify-content: center;
-  text-align: center;
   place-items: center;
 }
+
+
 
 .textbox {
   width: 100%;
@@ -139,14 +155,29 @@ p {
 }
 
 .map {
-  height: 50vh;
+  height: 60vh;
   aspect-ratio: 1/1;
+  border: 5px solid black;
 }
 
-@media (min-width: 1000px) { 
+@media (min-width: 2000px) { 
+  .title-container{
+    height: 40vh
+  }
+  .about-us-container{
+    display: flex;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1500px) { 
   .title-container{
     height: 20vh
   }
+  .about-us-container{
+    display: flex;
+  }
+
 }
 
 

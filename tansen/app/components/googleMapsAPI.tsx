@@ -21,7 +21,9 @@ const GoogleMap = () => {
         const map = new google.maps.Map(mapRef.current, {
           center: {lat: 53.51841880329726, lng: -113.51734477739068}, // Coordinates for Edmonton
           zoom: 13,
-          zoomControl: false
+          zoomControl: false,
+          disableDefaultUI: true,
+          streetViewControl: true
         });
 
         const infoWindow = new google.maps.InfoWindow({
