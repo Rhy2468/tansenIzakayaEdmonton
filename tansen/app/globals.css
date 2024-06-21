@@ -23,7 +23,7 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-p {
+.about-us-paragraph{
   margin: min(4vw, 30px);
   font-family: "Kaisei Decol", serif;
   font-style: normal;
@@ -69,6 +69,13 @@ p {
 
 .divider75 {
   width: 75%;
+  border: 0;
+  border-top: 1px solid white;
+  margin: 10px auto;
+}
+
+.divider100 {
+  width: 100%;
   border: 0;
   border-top: 1px solid white;
   margin: 10px auto;
@@ -144,6 +151,7 @@ p {
   margin-bottom: 300px;
   justify-content: center;
   place-items: center;
+  text-align: center;
 }
 
 .textbox {
@@ -217,27 +225,35 @@ p {
 }
 
 /*Contact Us*/
-.contact-us-title{
-  padding: 10px;
-  width:100%;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  font-family: "Kaisei Decol", serif;
-  font-style: bold;
-  letter-spacing: 0.5rem;
-  font-size: min(4vw, 70px);
-}
 
 .contact-info{
   display: flex; 
-  justify-content: center;
-  font-family: "Kaisei Decol", serif;
-  font-style: normal;
-  text-align: center;
-  padding-right: 0;
 }
 
+/*Footer*/
+.footer-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  font-family: "Kaisei Decol", serif;
+  font-style: normal;
+  font-size: min(2vw, 15px);
+}
+
+.links-card{
+  grid-column-start:5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-card{
+  grid-column-start:2;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: left;
+}
 
 /*Screen Size*/
 @media (min-width: 1500px) { 
@@ -248,6 +264,7 @@ p {
   .about-us-container{
     display: flex;
     width: 80%;
+    text-align: left;
   }
 }
 
@@ -257,6 +274,7 @@ p {
   }
   .about-us-container{
     display: flex;
+    text-align: left;
   }
 
   .cells-container{

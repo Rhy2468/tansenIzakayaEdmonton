@@ -59,7 +59,7 @@ export default function Home() {
           <Image src={brushStroke} alt="brush stroke" className="brush-stroke"/>
         </div>
         <div className="about-us-container">
-          <p>As the best izakaya in Edmonton, we pride ourselves on offering 
+          <p className="about-us-paragraph">As the best izakaya in Edmonton, we pride ourselves on offering 
             an authentic Japanese dining experience that combines traditional 
             flavors with a modern twist. At Tansen Izakaya, our menu features 
             a variety of delectable dishes, from expertly crafted sushi and 
@@ -93,14 +93,23 @@ export default function Home() {
 
         </div>
       </div>
-
-      <div className="contact-us-title">
-        <h1 id="contact-us">CONTACT US</h1>
-      </div>
-
-      <div className="contact-us">
-          <p className="contact-info">PHONE: 403 - 444 - 4444 </p>
-          <p className="contact-info">EMAIL: tensenIzakaya@gmail.com </p>
+      
+      <div className="divider100"></div>
+      <div className="footer-container">
+        <div className="first-card">
+          <Link className="logo" href="/">
+            <Image src={tansenLogo} alt="Tansen Izakaya Logo"/>
+          </Link>
+        </div>
+        <div className="contact-card">
+          <p className="contact-info">Phone: 403 - 444 - 4444</p>
+          <p className="contact-info">Email: tensenIzakaya@gmail.com</p>
+        </div>
+        <div className="links-card">
+          <Link className="link" href="#about-us"> About Us</Link>
+          <Link className="link" href="#about-us"> Menu</Link>
+          <Link className="link" href="#contact-us"> Contact Us</Link>
+        </div>
       </div>
     </main>
   );
