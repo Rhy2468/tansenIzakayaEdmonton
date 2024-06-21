@@ -9,8 +9,9 @@ import { useState, useEffect } from 'react';
 import tansenLogo from './assets/tansenLogo.png';
 import mainDishes from './assets/mainDishes.png';
 import brushStroke from './assets/brush-stroke.svg';
-import slide1 from './assets/Test1.jpg'; 
-import slide2 from './assets/Test2.jpg';
+import slide1 from './assets/slide1.jpg'; 
+import slide2 from './assets/slide2.jpg';
+import slide3 from './assets/slide3.jpg';
 
 
 
@@ -19,7 +20,7 @@ import GoogleMap from "./components/googleMapsAPI";
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [mainDishes,slide1, slide2];
+  const slides = [slide1, slide2, slide3];
 
   useEffect(() => {
     const interval = setInterval(() => {

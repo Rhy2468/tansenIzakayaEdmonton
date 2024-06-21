@@ -174,7 +174,7 @@ p {
 .cells-container {
   display: grid;
   width: 100%;
-  height: auto; /* Adjust the height as needed */
+  height: auto; 
   box-sizing: border-box;
 }
 
