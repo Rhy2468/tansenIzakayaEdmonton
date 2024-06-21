@@ -146,60 +146,16 @@ p {
   place-items: center;
 }
 
-
-
 .textbox {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
 }
-
+    /*Map*/
 .map {
-  height: 60vh;
+  height: 40vh;
   aspect-ratio: 1/1;
   border: 5px solid black;
-}
-
-@media (min-width: 2000px) { 
-  .title-container{
-    height: 40vh
-  }
-  .about-us-container{
-    display: flex;
-    width: 80%;
-  }
-}
-
-@media (min-width: 1500px) { 
-  .title-container{
-    height: 20vh
-  }
-  .about-us-container{
-    display: flex;
-  }
-
-}
-
-
-/*Contact Us*/
-.contact-us-title{
-  padding: 10px;
-  width:100%;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  font-family: "Kaisei Decol", serif;
-  font-style: bold;
-  letter-spacing: 0.5rem;
-  font-size: min(4vw, 70px);
-}
-
-.contact-info{
-  display: flex; 
-  justify-content: center;
-  font-family: "Kaisei Decol", serif;
-  font-style: normal;
-  text-align: center;
 }
 
 .aria-label {
@@ -213,14 +169,10 @@ p {
   font-size: min(4vw, 20px);
 }
 
-/*Gallery*/
-.gallery-container {
-  display: flex;
-  width: 100%;
-}
+/*Gallery and Instagram*/
 
 .cells-container {
-  display: flex;
+  display: grid;
   width: 100%;
   height: auto; /* Adjust the height as needed */
   box-sizing: border-box;
@@ -262,4 +214,51 @@ p {
 
 .slide.active {
   opacity: 1;
+}
+
+/*Contact Us*/
+.contact-us-title{
+  padding: 10px;
+  width:100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: "Kaisei Decol", serif;
+  font-style: bold;
+  letter-spacing: 0.5rem;
+  font-size: min(4vw, 70px);
+}
+
+.contact-info{
+  display: flex; 
+  justify-content: center;
+  font-family: "Kaisei Decol", serif;
+  font-style: normal;
+  text-align: center;
+}
+
+
+/*Screen Size*/
+@media (min-width: 1500px) { 
+  .map{
+    height: 40vh
+  }
+  
+  .about-us-container{
+    display: flex;
+    width: 80%;
+  }
+}
+
+@media (min-width: 2000px) { 
+  .map{
+    height: 60vh
+  }
+  .about-us-container{
+    display: flex;
+  }
+
+  .cells-container{
+    display: flex;
+  }
 }

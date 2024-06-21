@@ -75,23 +75,21 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="gallery-container">
-        <div className="cells-container">
-          <div className="left-cell">
-            <div className="slideshow">
-              {slides.map((slide, index) => (
-                <Image
-                  key={index}
-                  src={slide}
-                  alt={`Slide ${index + 1}`}
-                  className={`slide ${index === currentSlide ? 'active' : ''}`}
-                />
-              ))}
-            </div>
+      <div className="cells-container">
+        <div className="left-cell">
+          <div className="slideshow">
+            {slides.map((slide, index) => (
+              <Image
+                key={index}
+                src={slide}
+                alt={`Slide ${index + 1}`}
+                className={`slide ${index === currentSlide ? 'active' : ''}`}
+              />
+            ))}
           </div>
-          <div className="right-cell">
+        </div>
+        <div className="right-cell">
 
-          </div>
         </div>
       </div>
 
