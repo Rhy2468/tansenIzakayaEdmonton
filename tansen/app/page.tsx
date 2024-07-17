@@ -7,12 +7,32 @@ import { useState, useEffect } from 'react';
 
 //Images
 import tansenLogo from './assets/tansenLogo.png';
-import mainDishes from './assets/mainDishes.png';
 import brushStroke from './assets/brush-stroke.svg';
 import slide1 from './assets/slide1.jpg'; 
 import slide2 from './assets/slide2.jpg';
 import slide3 from './assets/slide3.jpg';
 
+import chickenSkewers from './assets/landingImage/TansenIzakaya_ChickenThighSkewers.png';
+import goma from './assets/landingImage/TansenIzakaya_Goma.png';
+import lobsterRolls from './assets/landingImage/TansenIzakaya_LobsterRolls.png';
+import redRamen from './assets/landingImage/TansenIzakaya_RedRamen.png';
+import smokeDockOshiSushi from './assets/landingImage/TansenIzakaya_SmokeDockOshiSushi.png';
+import tigerRolls from './assets/landingImage/TansenIzakaya_TigerRolls.png';
+import uniPastaWithShrimps from './assets/landingImage/TansenIzakaya_UniPastaWithShrimps.png';
+import shrimpSkewers from './assets/landingImage/TansenIzakaya_ShrimpSkewers.png';
+import aburiRolls from './assets/landingImage/TansenIzakaya_AburiSalmonRolls.png';
+
+const images = [
+  { src: lobsterRolls, alt: 'Lobster Rolls' },
+  { src: redRamen, alt: 'Red Ramen' },
+  { src: smokeDockOshiSushi, alt: 'Smoke Dock Oshi Sushi' },
+  { src: tigerRolls, alt: 'Tiger Rolls' },
+  { src: uniPastaWithShrimps, alt: 'Uni Pasta with Shrimps' },
+  { src: goma, alt: 'Goma' },
+  { src: chickenSkewers, alt: 'Chicken Skewers' },
+  { src: shrimpSkewers, alt: 'Shrimp Skewers' },
+  { src: aburiRolls, alt: 'Aburi Rolls' },
+];
 
 
 //API imports
@@ -48,10 +68,12 @@ export default function Home() {
       <div className="divider75"></div>
 
       <div className="mainDishes">
-        <Image src={mainDishes} alt="Picture of popular dishes"/>
+        <div className="scroll-belt">
+          {images.concat(images).map((image, index) => (
+            <Image key={index} src={image.src} alt={image.alt} />
+          ))}
+        </div>
       </div>
-
-
 
       <div className="about-us">
         <div className="title-container">
