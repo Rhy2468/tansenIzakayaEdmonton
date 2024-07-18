@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap');
 
 html {
@@ -84,12 +85,28 @@ body {
 /* NavBar/Logo */
 .flex-container {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   gap: min(8vw, 200px);
-  font-family: "Playwrite RO", cursive;
-  font-optical-sizing: auto;
-  font-weight: 200px;
+  font-family: cursive;
   font-style: normal;
+  font-size: min(2vw, 25px);
+  letter-spacing: 0.5rem;
+}
+
+.tab {
+  -webkit-animation: glow 3s ease-in-out infinite alternate;
+  -moz-animation: glow 3s ease-in-out infinite alternate;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b1b1b1, 0 0 40px #b1b1b1, 0 0 50px #b1b1b1, 0 0 60px #b1b1b1, 0 0 70px #b1b1b1;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
+  }
 }
 
 .divider75 {

@@ -67,8 +67,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="divider75"></div>
-
       <div className="mainDishes">
         <div className="scroll-belt">
           {images.concat(images).map((image, index) => (
