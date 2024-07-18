@@ -11,6 +11,8 @@ import brushStroke from './assets/brush-stroke.svg';
 import slide1 from './assets/slide1.jpg'; 
 import slide2 from './assets/slide2.jpg';
 import slide3 from './assets/slide3.jpg';
+import slide4 from './assets/slide4.jpg';
+import slide5 from './assets/slide5.jpg';
 
 import chickenSkewers from './assets/landingImage/TansenIzakaya_ChickenThighSkewers.png';
 import goma from './assets/landingImage/TansenIzakaya_Goma.png';
@@ -40,7 +42,7 @@ import GoogleMap from "./components/googleMapsAPI";
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [slide1, slide2, slide3];
+  const slides = [slide1, slide2, slide3, slide4, slide5];
 
   useEffect(() => {
     const interval = setInterval(() => {
