@@ -13,7 +13,6 @@ import slide2 from './assets/slide2.jpg';
 import slide3 from './assets/slide3.jpg';
 import slide4 from './assets/slide4.jpg';
 import slide5 from './assets/slide5.jpg';
-
 import chickenSkewers from './assets/landingImage/TansenIzakaya_ChickenThighSkewers.png';
 import goma from './assets/landingImage/TansenIzakaya_Goma.png';
 import lobsterRolls from './assets/landingImage/TansenIzakaya_LobsterRolls.png';
@@ -23,6 +22,16 @@ import tigerRolls from './assets/landingImage/TansenIzakaya_TigerRolls.png';
 import uniPastaWithShrimps from './assets/landingImage/TansenIzakaya_UniPastaWithShrimps.png';
 import shrimpSkewers from './assets/landingImage/TansenIzakaya_ShrimpSkewers.png';
 import aburiRolls from './assets/landingImage/TansenIzakaya_AburiSalmonRolls.png';
+import igPicture from './assets/igPicture.png';
+
+//Icons 
+import heart from "./assets/icons/heart.png";
+import comment from "./assets/icons/comment.png";
+import send from "./assets/icons/send.png";
+import bookmark from "./assets/icons/bookmark.png";
+import dot from "./assets/icons/dot.png";
+import tansenIcon from "./assets/icons/tansenlogo_NEg_1.ico"
+
 
 const images = [
   { src: lobsterRolls, alt: 'Lobster Rolls' },
@@ -112,25 +121,36 @@ export default function Home() {
           </div>
         </div>
         <div className="right-cell">
-
-        </div>
-      </div>
-      
-      <div className="divider100"></div>
-      <div className="footer-container">
-        <div className="first-card">
-          <Link className="logo" href="/">
-            <Image src={tansenLogo} alt="Tansen Izakaya Logo"/>
-          </Link>
-        </div>
-        <div className="contact-card">
-          <p className="contact-info">Phone: 403 - 444 - 4444</p>
-          <p className="contact-info">Email: tensenIzakaya@gmail.com</p>
-        </div>
-        <div className="links-card">
-          <Link className="link" href="#about-us"> About Us</Link>
-          <Link className="link" href="#about-us"> Menu</Link>
-          <Link className="link" href="#contact-us"> Contact Us</Link>
+          <div className="card">
+            <div className="top">
+              <div className="userDetails">
+                <div className="profileImg">
+                  <Image src={tansenLogo} alt="Tansen Izakaya Logo"/>
+                </div>
+                <h3>Tansen Izakaya</h3>
+              </div>
+              <div className="dot">
+                <Image src={dot} alt="dot"/>
+              </div>
+            </div>
+            <div className="imgBg">
+              <Image src={igPicture} alt="igPicture" className="cover"/>
+            </div>
+            <div className="btns">
+              <div className="left">
+                <Image src={heart} alt="heart"/>
+                <Image src={comment} alt="comment"/>
+                <Image src={send} alt="send"/>
+              </div>
+              <div className="right">
+                <Image src={bookmark} alt="bookmark"/>
+              </div>
+            </div>
+            <h4 className="likes">5,489 likes</h4>
+            <h4 className="message">
+              <b>tansenyeg_izakaya</b>
+            </h4>
+          </div>
         </div>
       </div>
     </main>
