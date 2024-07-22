@@ -30,7 +30,6 @@ import comment from "./assets/icons/comment.png";
 import send from "./assets/icons/send.png";
 import bookmark from "./assets/icons/bookmark.png";
 import dot from "./assets/icons/dot.png";
-import tansenIcon from "./assets/icons/tansenlogo_NEg_1.ico"
 
 
 const images = [
@@ -63,17 +62,16 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       <div className="header">
-        <Link className="logo" href="/">
-          <Image src={tansenLogo} alt="Tansen Izakaya Logo"/>
-        </Link>
+        <div className="logo-header">
+          <Link className="logo" href="/">
+            <Image src={tansenLogo} alt="Tansen Izakaya Logo"/>
+          </Link>
+        </div>
         <div className="flex-container">
           <div className="tab"> 
             <Link href="#about-us"> ABOUT US</Link>
           </div>
-          <div className="tab"> MENU</div>
-          <div className="tab"> 
-            <Link href="#contact-us"> CONTACT US</Link>
-          </div>
+          <div className="tab" ><a href="/menu.pdf" target="_blank" rel="noopener noreferrer"> MENU </a></div>
         </div>
       </div>
       <div className="mainDishes">
@@ -121,7 +119,7 @@ export default function Home() {
           </div>
         </div>
         <div className="right-cell">
-          <div className="card">
+          <div className="card"><a href="https://www.instagram.com/tansenyeg_izakaya/?hl=en" target="_blank">
             <div className="top">
               <div className="userDetails">
                 <div className="profileImg">
@@ -150,6 +148,7 @@ export default function Home() {
             <h4 className="message">
               <b>tansenyeg_izakaya</b>
             </h4>
+            </a>
           </div>
         </div>
       </div>

@@ -31,7 +31,6 @@ body {
   font-style: normal;
   font-size: min(3vw, 25px);
   width: 80%;
-  padding-right: 30px;
 }
 
 @layer utilities {
@@ -90,8 +89,9 @@ body {
   gap: min(8vw, 200px);
   font-family: cursive;
   font-style: normal;
-  font-size: min(2vw, 25px);
+  font-size: min(4vw, 25px);
   letter-spacing: 0.5rem;
+  justify-content: center;
 }
 
 .tab {
@@ -125,7 +125,13 @@ body {
 
 .logo {
   display: flex;
+  width: 20rem;
   justify-content: center;
+}
+
+.logo-header{
+  justify-content: center;
+  display: flex;
 }
 
 /*About Us*/
@@ -201,7 +207,7 @@ body {
 }
     /*Map*/
 .map {
-  height: 40vh;
+  height: 45vh;
   aspect-ratio: 1/1;
   border: 5px solid black;
 }
