@@ -25,14 +25,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.about-us-paragraph{
-  margin: min(4vw, 30px);
-  font-family: "Kaisei Decol", serif;
-  font-style: normal;
-  font-size: min(3vw, 25px);
-  width: 80%;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -113,14 +105,7 @@ body {
   width: 75%;
   border: 0;
   border-top: 1px solid white;
-  margin: 10px auto;
-}
-
-.divider100 {
-  width: 100%;
-  border: 0;
-  border-top: 1px solid white;
-  margin: 10px auto;
+  margin: 5px auto;
 }
 
 .logo {
@@ -170,7 +155,7 @@ body {
   font-family: "Kaisei Decol", serif;
   font-style: bold;
   letter-spacing: 0.5rem;
-  font-size: min(4vw, 70px);
+  font-size: min(5vw, 70px);
   z-index: 2;
   color: white;
   position: relative;
@@ -200,6 +185,14 @@ body {
   text-align: center;
 }
 
+.about-us-paragraph{
+  margin: min(4vw, 30px);
+  font-family: "Kaisei Decol", serif;
+  font-style: normal;
+  font-size: min(4vw, 25px);
+  width: 80%;
+}
+
 .textbox {
   width: 100%;
   padding: 10px;
@@ -224,12 +217,14 @@ body {
 }
 
 /*Gallery and Instagram*/
-
 .cells-container {
-  display: table-column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   width: 100%;
-  height: 70vh; 
   box-sizing: border-box;
+  height: 110vh;
+  padding-bottom: 10px;
 }
 
 .left-cell {
@@ -238,18 +233,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
-}
-
-.right-cell {
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: black;
-  color: black;
 }
 
 .slideshow {
@@ -276,13 +259,23 @@ body {
 }
 
 /*Instagram Card*/
+.right-cell {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: black;
+}
 .card{
   position: relative;
-  width: 720px;
   min-height: 400px;
   background: #fff;
   box-shadow: 5px 5px 60px grey;
   padding-bottom: 20px;
+  width: 100%;
 }
 .card .top{
   display: flex;
@@ -326,12 +319,14 @@ body {
   transform: scale(0.6);
   cursor: pointer;
 }
+
 .imgBg{
   position: relative;
   width: 100%;
   height: 380px;
   margin: 0 0 15px;
 }
+
 .btns{
   display: flex;
   justify-content: space-between;
@@ -374,16 +369,85 @@ body {
   color: #1d92ff;
   cursor: pointer;
 }
+
+/* Footer*/
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+}
+
+.footer-icons {
+  margin-bottom: 10px;
+  justify-content: center;
+  place-items: center;
+  display: flex;
+}
+
+.footer-icons .social-icon {
+  margin: 0 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.footer-contact {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.footer .footer-contact p {
+  margin: 0;
+}
+
 /*Screen Size*/
-@media (min-width: 1500px) { 
-  .map{
-    height: 40vh
+@media (min-width: 700px) {
+  .cells-container{
+    display: flex;
+    height: auto;
   }
-  
+
+  .left-cell{
+    width: 60%;
+    padding-right: 40px;
+    padding: 40px;
+  }
+
+  .right-cell{
+    width: 40%;
+  }
+
+  .imgBg{
+    height: 50vh;
+  }
+
+}
+
+@media (min-width: 1500px) { 
   .about-us-container{
     display: flex;
     width: 80%;
     text-align: left;
+  }
+
+  .map{
+    height: 40vh
+  }
+
+  .left-cell{
+    width: 50%;
+  }
+
+  .right-cell{
+    width: 50%;
+  }
+
+  .card{
+    width: 60%;
   }
 }
 
@@ -394,25 +458,6 @@ body {
   .about-us-container{
     display: flex;
     text-align: left;
-  }
-}
-
-@media (min-width: 500px) {
-  .cells-container{
-    display: flex;
-  }
-
-  .left-cell{
-    width: 60%;
-    padding-right: 40px;
-  }
-
-  .right-cell{
-    width: 40%;
-  }
-
-  .imgBg{
-    height: 50vh;
-  }
+  } 
 
 }

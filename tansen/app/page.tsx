@@ -30,6 +30,8 @@ import comment from "./assets/icons/comment.png";
 import send from "./assets/icons/send.png";
 import bookmark from "./assets/icons/bookmark.png";
 import dot from "./assets/icons/dot.png";
+import fbIcon from './assets/icons/facebook.png';
+import igIcon from './assets/icons/instagram.png';
 
 
 const images = [
@@ -152,6 +154,20 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="divider75"></div>
+      <footer className="footer">
+        <div className="footer-icons">
+          <a href="https://www.facebook.com/p/Tansenyeg_Izakaya-100092556602780/" target="_blank" rel="noopener noreferrer" title="Facebook icons created by Freepik - Flaticon">
+            <Image src={fbIcon} alt="Facebook Icon" className="social-icon" />
+          </a>
+          <a href="https://www.instagram.com/tansenyeg_izakaya/?hl=en" target="_blank" rel="noopener noreferrer" title="Instagram logo icons created by Pixel perfect - Flaticon">
+            <Image src={igIcon} alt="Instagram Icon" className="social-icon" />
+          </a>
+        </div>
+        <div className="footer-contact">
+          <p>(780) 249-8889 | 11044 82 Ave NW, Edmonton, AB T6G 0T2</p>
+        </div>
+      </footer>
     </main>
   );
 }
