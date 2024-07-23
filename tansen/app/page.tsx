@@ -97,7 +97,7 @@ export default function Home() {
             sashimi to flavorful yakitori and tempura, all made with the 
             freshest ingredients. Our warm and inviting atmosphere, 
             complemented by exceptional service, ensures that every visit is 
-            memorable. Whether you're enjoying a casual meal with friends or 
+            memorable. Whether you&apos;re enjoying a casual meal with friends or 
             celebrating a special occasion, Tansen Izakaya is dedicated to 
             providing a culinary journey that delights all your senses. 
           </p>
