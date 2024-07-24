@@ -111,12 +111,14 @@ export default function Home() {
         <div className="left-cell">
           <div className="slideshow">
             {slides.map((slide, index) => (
+              <div className={`slide ${index === currentSlide ? 'active' : ''}`} key={index}>
               <Image
-                key={index}
                 src={slide}
                 alt={`Slide ${index + 1}`}
-                className={`slide ${index === currentSlide ? 'active' : ''}`}
+                layout="fill"
+                objectFit="contain"
               />
+            </div>
             ))}
           </div>
         </div>
