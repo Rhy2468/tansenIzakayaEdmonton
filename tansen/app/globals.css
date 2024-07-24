@@ -225,6 +225,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   height: 110vh;
+  min-height: 1000px;
   padding-bottom: 10px;
   padding-top: 10px;
   margin-top: 5px;
@@ -282,6 +283,7 @@ body {
   background: black;
   color: black;
 }
+
 .card{
   position: relative;
   min-height: 400px;
@@ -422,6 +424,7 @@ body {
   .cells-container{
     display: flex;
     height: auto;
+    min-height: 0;
   }
 
   .left-cell{
